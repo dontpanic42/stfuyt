@@ -1,0 +1,22 @@
+{
+	
+	"manifest_version"	: 2,
+	"name"				: "Shut The F... Up YT!",
+	"description"		: "Pause autoplaying youtube's html5-videos on page load",
+	"version"			: "0.1",
+	
+	"content_scripts"	: [
+		{
+			"matches": [
+				"*://*.youtube.com/*"
+			],
+			"js": 		["stfu.js"],
+			"run_at":	"document_idle",
+			"all_frames": false
+		}
+	],
+
+	"permissions": [
+		"*://*.youtube.com/*"
+	] 
+}
