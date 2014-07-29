@@ -1,0 +1,1 @@
+Simple chrome extension that pauses youtube's html5 videos on page load.
